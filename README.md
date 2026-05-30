@@ -45,4 +45,4 @@ for booking device repair services.
 - XML Layouts
 
 ## 👨‍💻 Developer
-Rashid — Computer Science Student
+Rashidh — Computer Science Student
