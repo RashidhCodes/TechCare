@@ -44,5 +44,7 @@ for booking device repair services.
 - SQLite
 - XML Layouts
 
+## Status: Completed ✅
+
 ## 👨‍💻 Developer
 Rashidh — Computer Science Student
