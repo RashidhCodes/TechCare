@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_bg">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:text="←"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Support Center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="☰"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- FAQ TITLE -->
+            <TextView
+                android:text="KNOWLEDGE BASE (FAQ)"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- FAQ 1 -->
+            <LinearLayout
+                android:id="@+id/faq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="How long do standard repairs take?"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/arrow1"
+                        android:text="▾"
+                        android:textSize="14sp"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <!-- FAQ 1 ANSWER (hidden by default) -->
+                <TextView
+                    android:id="@+id/answer1"
+                    android:text="Most standard repairs are completed within 3-5 business days. Complex hardware issues may take up to 7-10 days. You will receive real-time updates via the Alert Center."
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- FAQ 2 -->
+            <LinearLayout
+                android:id="@+id/faq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="Warranty scope on structural components?"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/arrow2"
+                        android:text="▾"
+                        android:textSize="14sp"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <!-- FAQ 2 ANSWER -->
+                <TextView
+                    android:id="@+id/answer2"
+                    android:text="All repaired components carry a 90-day warranty. If the same issue reoccurs within 90 days of repair, we will fix it at no additional charge."
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- FAQ 3 -->
+            <LinearLayout
+                android:id="@+id/faq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="What devices do you service?"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/arrow3"
+                        android:text="▾"
+                        android:textSize="14sp"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <!-- FAQ 3 ANSWER -->
+                <TextView
+                    android:id="@+id/answer3"
+                    android:text="We service Smartphones, Laptops, Smart TVs and Washing Machines. All major brands are supported including Apple, Samsung, Dell, LG, Sony and more."
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- CONTACT TITLE -->
+            <TextView
+                android:text="DIRECT ESCALATION CHANNELS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- LIVE CHAT BUTTON -->
+            <Button
+                android:id="@+id/btnChat"
+                android:text="💬  Initiate Real-Time Support Chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- CALL BUTTON -->
+            <Button
+                android:id="@+id/btnCall"
+                android:text="📞  Connect to Voice Support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/accent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

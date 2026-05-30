@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_bg">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:text="←"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Service Parameters"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- DEVICE IMAGE PLACEHOLDER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvDeviceIcon"
+                    android:text="💻"
+                    android:textSize="48sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- SERVICE TITLE -->
+            <TextView
+                android:id="@+id/tvServiceTitle"
+                android:text="Premium Laptop Repair"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- PRICE -->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:text="Base Rate: $49.00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- DESCRIPTION CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:text="Complete diagnosis and repair service for your device."
+                    android:textSize="13sp"
+                    android:textColor="#555555"
+                    android:lineSpacingMultiplier="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- BOOK NOW BUTTON -->
+            <Button
+                android:id="@+id/btnBookNow"
+                android:text="BOOK NOW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/accent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

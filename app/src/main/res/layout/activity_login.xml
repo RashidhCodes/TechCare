@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="@color/light_bg">
+
+    <!-- Logo Icon -->
+    <TextView
+        android:text="👤"
+        android:textSize="48sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <!-- Title -->
+    <TextView
+        android:text="Welcome Back"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:text="Log in to track your hardware service"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:text="Email Address"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name@example.com"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:text="Password"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+
+    <!-- Go to Register -->
+    <TextView
+        android:id="@+id/tvGoRegister"
+        android:text="Don't have an account? Register"
+        android:textSize="12sp"
+        android:textColor="@color/accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
